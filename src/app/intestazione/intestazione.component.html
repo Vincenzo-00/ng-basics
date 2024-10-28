@@ -1,1 +1,10 @@
-<p>intestazione works!</p>
+<header>
+  <div>AMAZON LOGO</div>
+
+  <!-- DIRETTIVA STRUTTURALE *ngFor -->
+
+  <a *ngFor="let link of vociMenu" href="{{ link.url }}">{{ link.titolo }}</a>
+
+  <!-- DIRETTIVA STRUTTURALE *ngIf -->
+  <div *ngIf="utenteLoggato == true">Benvenuto Vincenzo</div>
+</header>
