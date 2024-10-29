@@ -6,5 +6,11 @@
   <a *ngFor="let link of vociMenu" href="{{ link.url }}">{{ link.titolo }}</a>
 
   <!-- DIRETTIVA STRUTTURALE *ngIf -->
-  <div *ngIf="utenteLoggato == true">Benvenuto Vincenzo</div>
+  <div *ngIf="utenteLoggato">
+    Benvenuto Vincenzo!
+    <button type="button">Esci</button>
+  </div>
+  <div *ngIf="!utenteLoggato">
+    <button type="button">Login</button>
+  </div>
 </header>
