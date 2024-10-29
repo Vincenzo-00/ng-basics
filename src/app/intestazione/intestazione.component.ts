@@ -13,20 +13,34 @@ export class IntestazioneComponent {
     {
       titolo: 'Chi siamo',
       url: 'https://google.com',
+      attivata: true
     },
     {
       titolo: 'Contatti',
       url: 'https://instagram.com',
+      attivata: true
     },
     {
       titolo: 'Assistenza',
       url: 'https://ferrari.com',
+      attivata: true
     },
     {
       titolo: 'Lavora per noi',
       url: 'https://amazon.com',
+      attivata: false
     },
   ];
 
   utenteLoggato = false;
+
+  entra() {
+    this.utenteLoggato = true;
+  }
+
+  
+  esci() {
+    this.utenteLoggato = false;
+  }
+
 }
